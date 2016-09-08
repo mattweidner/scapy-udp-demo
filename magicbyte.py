@@ -22,7 +22,7 @@ while not p:
     print(gid)
     # Use a layer 3 raw socket so scapy can talk to lo iface.
     # If you're doing this over a real wire, you won't need the
-    # following line.
+    # following 'conf' line.
     conf.L3socket=L3RawSocket
     p = sr1(IP(dst=sys.argv[1])/UDP(sport=55555,dport=int(sys.argv[2]))/MagicByte(GroupID=gid),timeout=0.1,verbose=False)
     if p:
