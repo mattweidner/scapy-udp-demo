@@ -23,4 +23,4 @@ Upon receiving a properly formatted UDP packet with byte 1 set to the "magic" va
 ## magicbyte.py
 Client script that brute forces the unknown value using scapy.
 
-See the accompanying blog post at https://mattctf.blogspot.com
+See the accompanying blog post at https://mattweidner.github.io/blog/scapy-udp-fuzz-part1.html
